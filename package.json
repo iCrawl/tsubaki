@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Promisify with native promises.",
   "main": "index.js",
+  "typings": "./typings/index.d.ts",
   "license": "MIT",
   "author": {
     "name": "Crawl",
@@ -27,9 +28,11 @@
   "homepage": "https://github.com/iCrawl/tsubaki#readme",
   "dependencies": {},
   "devDependencies": {
+    "@types/node": "^7.0.13",
     "eslint": "^3.19.0",
     "eslint-config-aqua": "^1.1.0",
-    "jest": "^19.0.2"
+    "jest": "^19.0.2",
+    "typescript": "^2.2.2"
   },
   "eslintConfig": {
     "extends": "aqua"
