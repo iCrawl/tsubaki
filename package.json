@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/node": "^7.0.13",
     "eslint": "^3.19.0",
-    "eslint-config-aqua": "^1.1.0",
+    "eslint-config-aqua": "^1.2.0",
     "jest": "^19.0.2",
     "typescript": "^2.2.2"
   },
