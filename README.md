@@ -1,4 +1,4 @@
-# tsubaki
+# Tsubaki
 > Promisify with native promises
 
 ## Features
@@ -22,7 +22,7 @@ const fs = promisifyAll(require('fs')); // With dot notation or destructuring
 
 fs.writeFileAsync('test.txt', '123456', 'utf-8')
 	.then(() => fs.readFileAsync('test.txt', 'utf-8'))
-	.then(console.log);
+	.then(content => console.log(content));
 ```
 
 ## Contributing
@@ -35,7 +35,7 @@ fs.writeFileAsync('test.txt', '123456', 'utf-8')
 
 ## Author
 
-**tsubaki** © [iCrawl](https://github.com/iCrawl), Released under the [MIT](https://github.com/iCrawl/tsubaki/blob/master/LICENSE) License.<br>
+**Tsubaki** © [iCrawl](https://github.com/iCrawl), Released under the [MIT](https://github.com/iCrawl/Tsubaki/blob/master/LICENSE) License.<br>
 Authored and maintained by iCrawl.
 
 > GitHub [@iCrawl](https://github.com/iCrawl) · Twitter [@iCrawlToGo](https://twitter.com/iCrawlToGo)
