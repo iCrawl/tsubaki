@@ -9,8 +9,8 @@
     "email": "icrawltogo@gmail.com"
   },
   "scripts": {
-    "pretest": "eslint . silent",
-    "test": "jest"
+    "pretest": "eslint .",
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
