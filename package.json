@@ -1,0 +1,40 @@
+{
+  "name": "tsubaki",
+  "version": "1.0.0",
+  "description": "Promisify with native promises.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Crawl",
+    "email": "icrawltogo@gmail.com"
+  },
+  "scripts": {
+    "pretest": "eslint . silent",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iCrawl/tsubaki.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iCrawl/tsubaki/issues"
+  },
+  "keywords": [
+    "promisify",
+    "native",
+    "promises"
+  ],
+  "homepage": "https://github.com/iCrawl/tsubaki#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-aqua": "^1.1.0",
+    "jest": "^19.0.2"
+  },
+  "eslintConfig": {
+    "extends": "aqua"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
