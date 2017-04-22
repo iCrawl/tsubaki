@@ -1,6 +1,17 @@
 # Tsubaki
 > Promisify with native promises
 
+<div align="center">
+	<p>
+		<a href="https://www.npmjs.com/package/tsubaki"><img src="https://img.shields.io/npm/v/tsubaki.svg?maxAge=3600" alt="NPM version" /></a>
+		<a href="https://www.npmjs.com/package/tsubaki"><img src="https://img.shields.io/npm/dt/tsubaki.svg?maxAge=3600" alt="NPM downloads" /></a>
+		<a href="https://david-dm.org/iCrawl/tsubaki"><img src="https://david-dm.org/iCrawl/tsubaki/status.svg?maxAge=3600" alt="Dependencies" /></a>
+	</p>
+	<p>
+		<a href="https://nodei.co/npm/tsubaki/"><img src="https://nodei.co/npm/tsubaki.png?downloads=true&stars=true" alt="NPM info" /></a>
+	</p>
+</div>
+
 ## Features
 - Actually maintained
 
