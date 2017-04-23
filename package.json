@@ -4,11 +4,16 @@
   "description": "Promisify with native promises.",
   "main": "index.js",
   "typings": "./typings/index.d.ts",
-  "license": "MIT",
   "author": {
     "name": "Crawl",
     "email": "icrawltogo@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "vzwGrey"
+    }
+  ],
+  "license": "MIT",
   "scripts": {
     "pretest": "eslint .",
     "test": "jest --verbose"
