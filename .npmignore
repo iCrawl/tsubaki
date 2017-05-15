@@ -17,5 +17,7 @@ node_modules
 
 examples
 test
+.gitattributes
 .gitignore
+.travis.yml
 yarn.lock
