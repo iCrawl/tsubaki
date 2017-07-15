@@ -1,9 +1,11 @@
+const nodeVersion = process.versions.node.split('.')[1];
+
 /**
  * Promisifies a function
  * @param {Function} fn The function to promisify
  * @returns {Function} Promise based version of the original function
  */
-module.exports = fn => {
+function promisify(fn) {
 	let name = fn.name;
 	name = (name || '').replace(/\s|bound(?!$)/g, '');
 	function newFunction(...args) {
@@ -18,4 +20,6 @@ module.exports = fn => {
 	}
 	Object.defineProperty(newFunction, 'name', { value: name });
 	return newFunction;
-};
+}
+
+module.exports = fn => nodeVersion === '8' ? require('util').promisify(fn) : promisify(fn);
