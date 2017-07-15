@@ -1,4 +1,4 @@
-const nodeVersion = process.versions.node.split('.')[1];
+const nodeVersion = process.versions.node.split('.')[0];
 
 /**
  * Promisifies a function
