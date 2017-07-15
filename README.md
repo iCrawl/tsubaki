@@ -14,6 +14,7 @@
 
 ## Features
 - Actually maintained
+- Uses node 8's util.promisify when running on node 8 to promisify functions
 
 ## Install
 
