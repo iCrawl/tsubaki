@@ -2,7 +2,7 @@ const { promisify, promisifyAll } = require('../index');
 const fs = promisifyAll(require('fs'));
 const writeFile = promisify(require('fs').writeFile);
 const readFile = promisify(require('fs').readFile);
-const nodeVersion = process.versions.node.split('.')[1];
+const nodeVersion = process.versions.node.split('.')[0];
 
 /* global test, expect */
 test('Write and read file with promises', () => {
