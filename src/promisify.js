@@ -6,7 +6,7 @@ const nodeVersion = process.versions.node.split('.')[0];
  * @returns {Function} Promise based version of the original function
  */
 function promisify(fn) {
-	let name = fn.name;
+	let name = fn.name; // eslint-disable-line prefer-destructuring
 	name = (name || '').replace(/\s|bound(?!$)/g, '');
 	function newFunction(...args) {
 		const arg = [];

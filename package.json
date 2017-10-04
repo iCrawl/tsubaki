@@ -1,6 +1,6 @@
 {
   "name": "tsubaki",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Promisify with native promises.",
   "main": "index.js",
   "typings": "./typings/index.d.ts",
@@ -33,11 +33,11 @@
   "homepage": "https://github.com/iCrawl/tsubaki#readme",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^8.0.13",
-    "eslint": "^4.2.0",
-    "eslint-config-aqua": "^1.4.1",
-    "jest": "^20.0.4",
-    "typescript": "^2.4.1"
+    "@types/node": "^8.0.32",
+    "eslint": "^4.8.0",
+    "eslint-config-aqua": "^2.0.1",
+    "jest": "^21.2.1",
+    "typescript": "^2.5.3"
   },
   "eslintConfig": {
     "extends": "aqua"
