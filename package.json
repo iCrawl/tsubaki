@@ -1,48 +1,48 @@
 {
-  "name": "tsubaki",
-  "version": "1.3.0",
-  "description": "Promisify with native promises.",
-  "main": "index.js",
-  "typings": "./typings/index.d.ts",
-  "author": {
-    "name": "Crawl",
-    "email": "icrawltogo@gmail.com"
-  },
-  "contributors": [
-    {
-      "name": "vzwGrey"
-    }
-  ],
-  "license": "MIT",
-  "scripts": {
-    "pretest": "eslint .",
-    "test": "jest --verbose"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iCrawl/tsubaki.git"
-  },
-  "bugs": {
-    "url": "https://github.com/iCrawl/tsubaki/issues"
-  },
-  "keywords": [
-    "promisify",
-    "native",
-    "promises"
-  ],
-  "homepage": "https://github.com/iCrawl/tsubaki#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^8.0.47",
-    "eslint": "^4.10.0",
-    "eslint-config-aqua": "^2.0.1",
-    "jest": "^21.2.1",
-    "typescript": "^2.5.3"
-  },
-  "eslintConfig": {
-    "extends": "aqua"
-  },
-  "engines": {
-    "node": ">=6"
-  }
+	"name": "tsubaki",
+	"version": "1.3.0",
+	"description": "Promisify with native promises.",
+	"main": "index.js",
+	"typings": "./typings/index.d.ts",
+	"author": {
+		"name": "Crawl",
+		"email": "icrawltogo@gmail.com"
+	},
+	"contributors": [
+		{
+			"name": "vzwGrey"
+		}
+	],
+	"license": "MIT",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "jest --verbose"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iCrawl/tsubaki.git"
+	},
+	"bugs": {
+		"url": "https://github.com/iCrawl/tsubaki/issues"
+	},
+	"keywords": [
+		"promisify",
+		"native",
+		"promises"
+	],
+	"homepage": "https://github.com/iCrawl/tsubaki#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^8.0.53",
+		"eslint": "^4.11.0",
+		"eslint-config-aqua": "^2.0.1",
+		"jest": "^21.2.1",
+		"typescript": "^2.6.1"
+	},
+	"eslintConfig": {
+		"extends": "aqua"
+	},
+	"engines": {
+		"node": ">=6"
+	}
 }
