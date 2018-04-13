@@ -22,7 +22,7 @@
 npm install --save tsubaki
 ```
 
-## Useage
+## Usage
 
 ```js
 const tsubaki = require('tsubaki'); // Normal require
