@@ -1,4 +1,4 @@
-const nodeVersion = process.versions.node.split('.')[0];
+const nodeVersion = parseInt(process.versions.node.split('.'), 10);
 const { promisify, promisifyAll } = require('../index');
 const fs = promisifyAll(require('fs'));
 const writeFile = promisify(require('fs').writeFile);
@@ -11,7 +11,7 @@ test('Write and read file with promises', () => {
 		.then(content => expect(content).toBe('123456'));
 });
 
-if (nodeVersion === '8') {
+if (nodeVersion >= 8) {
 	test('Write and read file with util.promise on node >= 8', () => {
 		writeFile('test.txt', '123456', 'utf-8')
 			.then(() => readFile('test.txt', 'utf-8'))

@@ -1,4 +1,4 @@
-const nodeVersion = process.versions.node.split('.')[0];
+const nodeVersion = parseInt(process.versions.node.split('.'), 10);
 
 /**
  * Promisifies a function
@@ -14,12 +14,11 @@ function promisify(fn) {
 		return new Promise((resolve, reject) =>
 			fn.apply(this, [...args, (err, res) => { // eslint-disable-line no-invalid-this
 				if (err) return reject(err);
-				else return resolve(res);
-			}])
-		);
+				return resolve(res);
+			}]));
 	}
 	Object.defineProperty(newFunction, 'name', { value: name });
 	return newFunction;
 }
 
-module.exports = fn => nodeVersion === '8' ? require('util').promisify(fn) : promisify(fn);
+module.exports = fn => (nodeVersion >= 8 ? require('util').promisify(fn) : promisify(fn));
