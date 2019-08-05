@@ -11,9 +11,6 @@ pids
 *.pid
 *.seed
 
-# IDE
-.vscode/bookmarks.json
-
 # Test files
 *.bak
 
