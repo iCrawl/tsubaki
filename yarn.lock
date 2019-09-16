@@ -999,10 +999,10 @@ escodegen@^1.9.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-aqua@^6.0.1:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-aqua/-/eslint-config-aqua-6.0.2.tgz#9793835763701dc8fc21e4b8078c7b6a45e3394a"
-  integrity sha512-uyd+OmmIO0wqnG85FdUK+t+HTQER09F+SpZXkq+0I8uMmEYLtvS4KMvxdXex0U11ZMOThCwEHWIGFNH0Xehvpg==
+eslint-config-aqua@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-aqua/-/eslint-config-aqua-7.0.0.tgz#e23c35176a353ca4460b7c8495f60256d4d955b5"
+  integrity sha512-Rm9ZmLLjt2hN8pu59pTcvktgvpgFr660SVCm0LSvmoDgV0/Jsb+P8fF87Krw3b0khZrFFuhjByAfJPF4IAvooQ==
 
 eslint-scope@^5.0.0:
   version "5.0.0"
