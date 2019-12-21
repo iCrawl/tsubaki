@@ -12,13 +12,17 @@ function promisify(fn) {
 		const arg = [];
 		for (const key of Object.keys(args)) arg.push(args[key]);
 		return new Promise((resolve, reject) =>
-			fn.apply(this, [...args, (err, res) => {
-				if (err) return reject(err);
-				return resolve(res);
-			}]));
+			fn.apply(this, [
+				...args,
+				(err, res) => {
+					if (err) return reject(err);
+					return resolve(res);
+				},
+			]),
+		);
 	}
 	Object.defineProperty(newFunction, 'name', { value: name });
 	return newFunction;
 }
 
-module.exports = fn => nodeVersion >= 8 ? require('util').promisify(fn) : promisify(fn);
+module.exports = fn => (nodeVersion >= 8 ? require('util').promisify(fn) : promisify(fn));

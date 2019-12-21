@@ -18,4 +18,3 @@ if (nodeVersion >= 8) {
 			.then(content => expect(content).toBe('123456'));
 	});
 }
-
