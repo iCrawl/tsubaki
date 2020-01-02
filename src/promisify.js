@@ -18,7 +18,7 @@ function promisify(fn) {
 					if (err) return reject(err);
 					return resolve(res);
 				},
-			]),
+			])
 		);
 	}
 	Object.defineProperty(newFunction, 'name', { value: name });
