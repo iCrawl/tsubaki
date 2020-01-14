@@ -18,6 +18,8 @@ pids
 examples/
 test/
 .tmp/
+.github/
 .gitattributes
 .gitignore
 .travis.yml
+README.md
