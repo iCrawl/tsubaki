@@ -15,7 +15,8 @@
 	],
 	"license": "MIT",
 	"scripts": {
-		"pretest": "eslint .",
+		"lint": "eslint src",
+		"pretest": "yarn lint",
 		"test": "jest --verbose"
 	},
 	"repository": {
