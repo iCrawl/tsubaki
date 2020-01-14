@@ -41,7 +41,7 @@
 		"prettier": "^1.19.1"
 	},
 	"eslintConfig": {
-		"extends": "aqua/prettier/node"
+		"extends": "aqua/node"
 	},
 	"engines": {
 		"node": ">=6"

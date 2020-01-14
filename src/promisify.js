@@ -18,11 +18,10 @@ function promisify(fn) {
 					if (err) return reject(err);
 					return resolve(res);
 				}
-			])
-		);
+			]));
 	}
 	Object.defineProperty(newFunction, 'name', { value: name });
 	return newFunction;
 }
 
-module.exports = fn => (nodeVersion >= 8 ? require('util').promisify(fn) : promisify(fn));
+module.exports = fn => nodeVersion >= 8 ? require('util').promisify(fn) : promisify(fn);
