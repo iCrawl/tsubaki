@@ -1193,9 +1193,9 @@ escodegen@^1.11.1:
     source-map "~0.6.1"
 
 eslint-config-aqua@^7.1.2:
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-aqua/-/eslint-config-aqua-7.1.2.tgz#2e1d0fc8f54b1ee72e942c74ada1e4ed06e5c955"
-  integrity sha512-114aQgThTf2tXlvF47Ij/oEp92QplZog6GiGqfSIkn7hMonFhbWwZT2kUX/JcrynLMTZQdjR5mM9kkd7cFhlHg==
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-aqua/-/eslint-config-aqua-7.2.1.tgz#10802b39d4c21f7b8192bb33ad5b7014b52683c6"
+  integrity sha512-GXRpVRoxD4qIriJ7/8+XCG5P04gtT/Yqwv1u0b6X8X5ue/JouFCpRWTnhktNVVrafeq7ObLbAJG99rbb3MsVww==
 
 eslint-config-prettier@^6.7.0:
   version "6.9.0"
