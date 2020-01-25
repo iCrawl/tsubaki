@@ -1,4 +1,4 @@
-const promisify = require('./promisify');
+import promisify from './promisify';
 
 /**
  * Promisifies an object with functions
@@ -6,7 +6,7 @@ const promisify = require('./promisify');
  * @param {string} [suffix='Async'] Suffix to append to the promisified function
  * @returns {Object} The updated object with promisified functions
  */
-module.exports = (obj, suffix = 'Async') => {
+const promisifyAll = (obj: any, suffix = 'Async') => {
 	// Appearently some people like to promisify class instances
 	const newObj = Object.getPrototypeOf(obj);
 	for (const key of Object.keys(obj).concat(Object.keys(newObj))) {
@@ -15,3 +15,6 @@ module.exports = (obj, suffix = 'Async') => {
 	}
 	return obj;
 };
+
+export { promisifyAll };
+export default promisifyAll;

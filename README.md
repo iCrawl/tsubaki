@@ -19,7 +19,7 @@
 ## Install
 
 ```bash
-npm install --save tsubaki
+npm install tsubaki
 ```
 
 ## Usage
