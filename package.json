@@ -60,6 +60,9 @@
 			"jest": true
 		}
 	},
+	"renovate": {
+		"extends": ["teal"]
+	},
 	"jest": {
 		"preset": "ts-jest",
 		"testEnvironment": "node",
