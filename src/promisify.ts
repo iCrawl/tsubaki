@@ -9,6 +9,7 @@ export function promisify(fn: (...args: any[]) => any) {
 	return (...args: any[]): Promise<any> =>
 		new Promise((resolve, rej) => {
 			fn(...args, (err: Error, res: any) => {
+				// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 				if (err) return rej(err);
 				return resolve(res);
 			});
