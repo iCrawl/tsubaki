@@ -5,7 +5,7 @@ devDependencies:
   '@typescript-eslint/parser': 3.0.0_eslint@7.0.0+typescript@3.7.5
   eslint: 7.0.0
   eslint-config-aqua: 7.2.1_b20532202144b002fd1e79cffa01d3ac
-  eslint-config-marine: 6.0.0_b20532202144b002fd1e79cffa01d3ac
+  eslint-config-marine: 7.0.1
   eslint-config-prettier: 6.9.0_eslint@7.0.0
   eslint-plugin-prettier: 3.1.2_eslint@7.0.0+prettier@2.0.0
   jest: 26.0.0
@@ -1438,17 +1438,18 @@ packages:
         optional: true
     resolution:
       integrity: sha512-GXRpVRoxD4qIriJ7/8+XCG5P04gtT/Yqwv1u0b6X8X5ue/JouFCpRWTnhktNVVrafeq7ObLbAJG99rbb3MsVww==
-  /eslint-config-marine/6.0.0_b20532202144b002fd1e79cffa01d3ac:
-    dependencies:
-      eslint-config-aqua: 7.2.1_b20532202144b002fd1e79cffa01d3ac
+  /eslint-config-aqua/7.2.4:
     dev: true
-    peerDependencies:
-      eslint: '*'
-      eslint-config-prettier: '*'
-      eslint-plugin-prettier: '*'
-      prettier: '*'
+    engines:
+      node: '>=10'
     resolution:
-      integrity: sha512-4735oFwmfMsXQY/MUKJ/N8EjCqHiLkAu9kbxOjdQCwJpWUeDpGwLUN5LL/c5DZQ/NaQVGfLvUM0gq4waj8UwAA==
+      integrity: sha512-AfZdiyAkzeVQaPlpKPI2KGtyWH3ePs5fAOUwDYsT52OGAPyBid8Rotgkn/0JdRM/79MF3pOrXfOtcEjsMxhB3w==
+  /eslint-config-marine/7.0.1:
+    dependencies:
+      eslint-config-aqua: 7.2.4
+    dev: true
+    resolution:
+      integrity: sha512-/AtXkgPNsY79iGPGDC6MWg+zNmUNn+nqbi8yyuLtmzA6Jfe2xUtosIXVvatqCKOxQxvcgcQWSaKddt6cr4vZDA==
   /eslint-config-prettier/6.9.0_eslint@7.0.0:
     dependencies:
       eslint: 7.0.0
@@ -4519,7 +4520,7 @@ specifiers:
   '@typescript-eslint/parser': ^3.0.0
   eslint: ^7.0.0
   eslint-config-aqua: ^7.2.1
-  eslint-config-marine: ^6.0.0
+  eslint-config-marine: ^7.0.0
   eslint-config-prettier: ^6.9.0
   eslint-plugin-prettier: ^3.1.2
   jest: ^26.0.0
