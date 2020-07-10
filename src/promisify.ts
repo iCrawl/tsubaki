@@ -16,5 +16,5 @@ export function promisify(fn: (...args: any[]) => any) {
 		});
 }
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
+// eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
 export default (fn: (...args: any[]) => any) => (nodeVersion >= 8 ? require('util').promisify(fn) : promisify(fn));
