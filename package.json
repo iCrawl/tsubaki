@@ -1,6 +1,6 @@
 {
 	"name": "tsubaki",
-	"version": "1.3.8",
+	"version": "1.3.9",
 	"description": "Promisify with native promises.",
 	"main": "dist/index.js",
 	"typings": "typings/index.d.ts",
