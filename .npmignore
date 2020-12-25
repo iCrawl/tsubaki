@@ -1,8 +1,9 @@
 # Packages
-node_modules/
+node_modules
+**/node_modules
 
 # Log files
-logs/
+logs
 *.log
 npm-debug.log*
 
@@ -12,13 +13,17 @@ pids
 *.seed
 
 # Test files
-*.bak
+test/
 
 # Miscellaneous
-test/
 .tmp/
 .github/
 .gitattributes
 .gitignore
-.travis.yml
-README.md
+.eslintrc.json
+.prettierc.json
+.npmignore
+.npmrc
+jest.config.js
+tsconfig.json
+src/

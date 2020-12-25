@@ -1,4 +1,5 @@
 # Tsubaki
+
 > Promisify with native promises
 
 <div align="center">
@@ -13,6 +14,7 @@
 </div>
 
 ## Features
+
 - Actually maintained
 - Uses node 8's util.promisify when running on node 8 to promisify functions
 
@@ -34,7 +36,7 @@ const fs = promisifyAll(require('fs')); // With dot notation or destructuring
 
 fs.writeFileAsync('test.txt', '123456', 'utf-8')
 	.then(() => fs.readFileAsync('test.txt', 'utf-8'))
-	.then(content => console.log(content));
+	.then((content) => console.log(content));
 ```
 
 ## Contributing

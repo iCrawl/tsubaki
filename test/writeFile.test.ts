@@ -16,7 +16,7 @@ test('Write and read file with promises', () => {
 
 if (nodeVersion >= 8) {
 	test('Write and read file with util.promise on node >= 8', () => {
-		writeFile(join(__dirname, '..', 'test.txt'), '123456', 'utf-8')
+		void writeFile(join(__dirname, '..', 'test.txt'), '123456', 'utf-8')
 			.then(() => readFile(join(__dirname, '..', 'test.txt'), 'utf-8'))
 			.then((content: string) => expect(content).toBe('123456'));
 	});

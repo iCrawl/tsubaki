@@ -36,37 +36,19 @@
 	],
 	"homepage": "https://github.com/iCrawl/tsubaki#readme",
 	"devDependencies": {
-		"@types/jest": "^26.0.4",
-		"@types/node": "^14.0.5",
-		"@typescript-eslint/eslint-plugin": "^4.0.0",
-		"@typescript-eslint/parser": "^3.0.0",
-		"eslint": "^7.1.0",
-		"eslint-config-marine": "^7.1.2",
-		"eslint-config-prettier": "^7.0.0",
-		"eslint-plugin-prettier": "^3.1.3",
-		"jest": "^26.0.1",
-		"prettier": "^2.0.5",
+		"@types/jest": "^26.0.19",
+		"@types/node": "^14.14.16",
+		"@typescript-eslint/eslint-plugin": "^4.11.0",
+		"@typescript-eslint/parser": "^4.11.0",
+		"eslint": "^7.16.0",
+		"eslint-config-marine": "^8.0.1",
+		"eslint-config-prettier": "^7.1.0",
+		"eslint-plugin-prettier": "^3.3.0",
+		"jest": "^26.6.3",
+		"prettier": "^2.2.1",
 		"rimraf": "^3.0.2",
-		"ts-jest": "^26.0.0",
-		"typescript": "^4.0.2"
-	},
-	"eslintConfig": {
-		"extends": "marine/prettier/node",
-		"parserOptions": {
-			"project": "tsconfig.eslint.json"
-		},
-		"env": {
-			"jest": true
-		}
-	},
-	"jest": {
-		"preset": "ts-jest",
-		"testEnvironment": "node",
-		"globals": {
-			"ts-jest": {
-				"tsConfig": "tsconfig.jest.json"
-			}
-		}
+		"ts-jest": "^26.4.4",
+		"typescript": "^4.1.3"
 	},
 	"engines": {
 		"node": ">=6"
