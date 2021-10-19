@@ -27,3 +27,7 @@ test/
 jest.config.js
 tsconfig.json
 src/
+coverage
+.husky
+.lintstagedrc
+babel.config.js
