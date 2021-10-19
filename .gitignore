@@ -16,6 +16,5 @@ pids
 .tmp/
 dist
 typings
-.github/
 coverage
 test.txt
