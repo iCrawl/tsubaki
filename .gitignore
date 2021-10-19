@@ -17,3 +17,5 @@ pids
 dist
 typings
 .github/
+coverage
+test.txt

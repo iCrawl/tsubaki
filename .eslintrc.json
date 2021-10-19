@@ -1,12 +1,12 @@
 {
 	"root": true,
+	"extends": ["marine/prettier/node"],
 	"parserOptions": {
-		"project": "tsconfig.eslint.json"
+		"project": "./tsconfig.eslint.json"
 	},
 	"env": {
 		"jest": true
 	},
-	"extends": ["marine/prettier/node"],
 	"rules": {
 		"@typescript-eslint/naming-convention": 0
 	}

@@ -5,7 +5,9 @@ const nodeVersion = parseInt(process.versions.node.split('.')[0], 10);
 import { join } from 'path';
 import { promisify, promisifyAll } from '../src';
 const fs = promisifyAll(require('fs'));
+// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 const writeFile = promisify(require('fs').writeFile);
+// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 const readFile = promisify(require('fs').readFile);
 
 test('Write and read file with promises', () => {

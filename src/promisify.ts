@@ -8,6 +8,7 @@ const nodeVersion = parseInt(process.versions.node.split('.')[0], 10);
 export function promisify(fn: (...args: any[]) => any) {
 	return (...args: any[]): Promise<any> =>
 		new Promise((resolve, rej) => {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			fn(...args, (err: Error, res: any) => {
 				// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 				if (err) return rej(err);

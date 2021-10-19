@@ -1,19 +1,46 @@
 {
+	// Mapped from https://www.typescriptlang.org/tsconfig
 	"compilerOptions": {
+		// Type Checking
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 		"strict": true,
-		"module": "commonjs",
+		"useUnknownInCatchVariables": true,
+
+		// Modules
+		"module": "CommonJS",
 		"moduleResolution": "node",
-		"declaration": true,
-		"declarationDir": "typings",
-		"removeComments": false,
-		"alwaysStrict": true,
-		"pretty": true,
-		"target": "es2015",
-		"lib": ["ESNext"],
-		"sourceMap": true,
+		"resolveJsonModule": true,
+
+		// Emit
+		"declaration": false,
+		"importHelpers": true,
+		"importsNotUsedAsValues": "error",
 		"inlineSources": true,
-		"sourceRoot": "/",
-		"outDir": "dist"
+		"newLine": "lf",
+		"noEmitHelpers": true,
+		"outDir": "dist",
+		"preserveConstEnums": false,
+		"removeComments": false,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+
+		// Language and Environment
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"lib": ["ESNext"],
+		"target": "ES2015",
+		"useDefineForClassFields": true,
+
+		// Completeness
+		"skipLibCheck": true
 	},
-	"exclude": ["test/**/*.test.ts", "test/**/*.spec.ts"]
+	"include": ["src/**/*.ts"]
 }

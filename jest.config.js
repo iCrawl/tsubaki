@@ -1,9 +1,11 @@
+/**
+ * @type {import('@jest/types').Config.InitialOptions}
+ */
 module.exports = {
-	preset: 'ts-jest',
+	testMatch: ['<rootDir>/test/**/*.test.ts'],
 	testEnvironment: 'node',
-	globals: {
-		'ts-jest': {
-			tsConfig: 'tsconfig.jest.json',
-		},
-	},
+	collectCoverage: true,
+	collectCoverageFrom: ['src/**/*.ts'],
+	coverageDirectory: 'coverage',
+	coverageReporters: ['text', 'lcov', 'clover'],
 };

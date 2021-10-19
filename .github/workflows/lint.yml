@@ -8,16 +8,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install Node v12
-        uses: actions/setup-node@v1
+      - name: Install Node v6
+        uses: actions/setup-node@v2
         with:
-          node-version: 12
-
-      - name: Install pnpm
-        run: curl -L https://unpkg.com/@pnpm/self-installer | node
+          node-version: 6
 
       - name: Install dependencies
-        run: pnpm i
+        run: npm ci
 
       - name: Run Lint
-        run: pnpm run lint
+        run: npm run lint
