@@ -3,14 +3,8 @@
 > Promisify with native promises
 
 <div align="center">
-	<p>
-		<a href="https://www.npmjs.com/package/tsubaki"><img src="https://img.shields.io/npm/v/tsubaki.svg?maxAge=3600" alt="NPM version" /></a>
-		<a href="https://www.npmjs.com/package/tsubaki"><img src="https://img.shields.io/npm/dt/tsubaki.svg?maxAge=3600" alt="NPM downloads" /></a>
-		<a href="https://david-dm.org/iCrawl/tsubaki"><img src="https://david-dm.org/iCrawl/tsubaki/status.svg?maxAge=3600" alt="Dependencies" /></a>
-	</p>
-	<p>
-		<a href="https://nodei.co/npm/tsubaki/"><img src="https://nodei.co/npm/tsubaki.png?downloads=true&stars=true" alt="NPM info" /></a>
-	</p>
+	<a href="https://www.npmjs.com/package/tsubaki"><img src="https://img.shields.io/npm/v/tsubaki.svg?maxAge=3600" alt="NPM version" /></a>
+	<a href="https://www.npmjs.com/package/tsubaki"><img src="https://img.shields.io/npm/dt/tsubaki.svg?maxAge=3600" alt="NPM downloads" /></a>
 </div>
 
 ## Features
@@ -27,12 +21,9 @@ npm install tsubaki
 ## Usage
 
 ```js
-const tsubaki = require('tsubaki'); // Normal require
-const promisifyAll = require('tsubaki').promisifyAll; // Dot notation
-const { promisifyAll } = require('tsubaki'); // With destructuring
+const { promisifyAll } = require('tsubaki');
 
-const fs = tsubaki.promisifyAll(require('fs')); // Normal require
-const fs = promisifyAll(require('fs')); // With dot notation or destructuring
+const fs = promisifyAll(require('fs'));
 
 fs.writeFileAsync('test.txt', '123456', 'utf-8')
 	.then(() => fs.readFileAsync('test.txt', 'utf-8'))
