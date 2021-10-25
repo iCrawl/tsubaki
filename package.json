@@ -1,6 +1,6 @@
 {
 	"name": "tsubaki",
-	"version": "1.3.13",
+	"version": "1.3.14",
 	"description": "Promisify with native promises.",
 	"scripts": {
 		"prebuild": "npm run lint",
