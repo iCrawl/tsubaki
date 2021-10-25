@@ -11,6 +11,7 @@
 		"test": "jest --passWithNoTests",
 		"test:ci": "jest --no-stack-trace --verbose --passWithNoTests",
 		"prepare": "is-ci || husky install",
+		"prerelease": "npm run build",
 		"release": "standard-version --preset angular"
 	},
 	"main": "./dist/index.js",
