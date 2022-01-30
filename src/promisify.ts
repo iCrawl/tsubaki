@@ -17,5 +17,5 @@ export function promisify(fn: (...args: any[]) => any) {
 		});
 }
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
 export default (fn: (...args: any[]) => any) => (nodeVersion >= 8 ? require('util').promisify(fn) : promisify(fn));
